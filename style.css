@@ -533,6 +533,66 @@ Footer Area css
         font-size: 12px;
     }
 
+
+    /* 
+    Work Area css
+    */
+
+    .single-work {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .single-work-text {
+        background: #FFFFFF;
+        box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 40px 0px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+    .single-work-text::after {
+        position: absolute;
+        content: "";
+        height: 100px;
+        width: 25px;
+        border-top: 2px solid #E0E0E0;
+        border-right: 2px solid #E0E0E0;
+        z-index: -1;
+        right: -21px;
+        top: 50px;
+    }
+    .single-work-text.special::after {
+        left: -21px;
+        top: 50px;
+        border-right: none;
+    }
+    .single-work-two .single-work-text::before {
+        position: absolute;
+        content: "";
+        height: 100px;
+        width: 25px;
+        border-top: 2px solid #E0E0E0;
+        z-index: -1;
+        right: -21px;
+        top: 50px;
+    }
+    .single-work-three .single-work-text::before {
+        position: absolute;
+        content: "";
+        height: 100px;
+        width: 25px;
+        border-top: 2px solid #E0E0E0;
+        border-left: 2px solid #E0E0E0;
+        z-index: -1;
+        left: -21px;
+        top: 50px;
+    }
 }
 
 @media (max-width: 991px) {
