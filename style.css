@@ -124,6 +124,11 @@ Header area css
     color: #fff;
     border-radius: 15px 0;
     padding: 10px 20px;
+    transition: .3s;
+}
+
+.header-area .nav-item:last-child .nav-link:hover {
+    background-color: #37806B;
 }
 
 
@@ -520,3 +525,161 @@ Footer Area css
 .design img {
     height: 100px;
 }
+
+
+@media (max-width: 1199px) {
+    body {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 991px) {
+   /* 
+   Defult css
+   */
+
+
+
+/* 
+Header Area Css
+*/
+
+.header-area .nav-item:last-child {
+    margin-left: 30px;
+    text-align: center;
+}
+
+/* 
+Hero Area Css
+*/
+.hero-area {
+    text-align: center;
+    padding: 100px 0;
+}
+.hero-area .theme-button {
+    margin-bottom: 70px;
+}
+
+
+/* 
+service area css
+*/
+
+.service-area {
+    text-align: center;
+}
+
+
+/* 
+about area css
+*/
+
+.about-area h4 {
+    margin-top: 50px;
+}
+.about-area h3 {
+    margin-bottom: 40px;
+}
+
+/* 
+success area css
+*/
+.success-area {
+    text-align: center;
+}
+.success-area .section-heading a {
+    margin-bottom: 50px;
+}
+
+
+/* 
+work area css
+*/
+
+
+.single-work-text {
+    background: #FFFFFF;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.single-work-text::after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+.single-work-text.special::after {
+    left: 0;
+    top: 0;
+    border-right: none;
+}
+.single-work-two .single-work-text::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 2px solid #E0E0E0;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+.single-work-three .single-work-text::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 2px solid #E0E0E0;
+    border-left: 2px solid #E0E0E0;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.special {
+    margin-top: 50px;
+}
+.single-work-three {
+    margin-top: 50px;
+}
+
+/* 
+blog-area
+*/
+.blog-area .blog-text {
+    text-align: center;
+}
+.blog-area .blog-text h3 {
+    font-size: 40px;
+}
+.blog-area .theme-button {
+    margin-bottom: 30px;
+}
+
+/* 
+Footer Area Css
+*/
+.footer-area {
+    text-align: center;
+}
+.footer-about img {
+    margin-bottom: 40px;
+}
+.footer-area .footer-link {
+    margin-top: 30px;
+}
+}
+
